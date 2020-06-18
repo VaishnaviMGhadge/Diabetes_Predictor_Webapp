@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<section class="new" style="height: 30%;width: 100%; margin-top: 5%;">
+  <h1 style="margin:1px;"><i>A diabetes Patient Predictor</i></h1>
+</section>
+<form method="POST" style="margin-bottom: 20px;margin-top: 50px;margin-right: 100px;margin-left: 100px;">
+
+
+<div class="form-group col-md-6">
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Pregnancies" name="Pregnancies" required>
+</div><br>
+
+ <div class="form-group col-md-6"> 
+ 	<input type="number" class='form-control' id='exampleInputPassword1' placeholder="Glucose range(eg:110-140)" name='Glucose' required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="number"  class='form-control '  id="exampleInputPassword1" placeholder="BloodPressure range(eg:120)"name="BloodPressure" required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="number"  class='form-control '  id="exampleInputPassword1" placeholder="SkinThickness range(eg:10)"name="SkinThickness" required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="number"  class='form-control '  id="exampleInputPassword1" placeholder="Insulin range(eg:18-276)"name="Insulin" required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="number"  class='form-control '  id="exampleInputPassword1" placeholder="BMI range(eg:18-25)"name="BMI" required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="text"  class='form-control '  id="exampleInputPassword1" placeholder="DiabetesPedigreeFunction range(0-5)"name="DiabetesPedigreeFunction" required="">
+</div><br>
+
+<div class="col-md-6">
+	<input type="number"  class='form-control '  id="exampleInputPassword1" placeholder="Age range"name="Age" required="">
+</div><br>
+<div style="margin-top: 30px;">
+<button type="submit" class="btn btn-outline-primary" style="margin-left:20%;height: 40px;width: 20%;">Predict</button>
+</div>
+</form>
+{%endblock%}
